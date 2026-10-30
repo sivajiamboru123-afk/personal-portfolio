@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio website">
+  <title>Sameera | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">sivaji<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span>sivaji</span></h1>
+        <h2>Computer Science Engineering Student</h2>
+        <p class="intro">I enjoy learning new technologies and building simple, useful web projects. This portfolio shares my skills, projects and learning journey.</p>
+        <div class="actions">
+          <a class="button primary" href="#projects">View My Work</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Portfolio introduction card">
+        <div class="avatar">S</div>
+        <p class="card-kicker">ASPIRING DEVELOPER</p>
+        <h3>Curious mind.<br>Creative ideas.</h3>
+        <p>Learning one step at a time.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section section-soft">
+      <div class="section-heading">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About Me</h2>
+      </div>
+      <p class="section-text">I'm a Computer Science Engineering student interested in web development and technology. I like exploring new skills, solving problems and turning ideas into practical projects. My goal is to keep learning and grow as a developer.</p>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I'M LEARNING</p>
+        <h2>My Skills</h2>
+      </div>
+      <div class="skill-grid">
+        <article class="skill"><span>01</span><h3>HTML</h3><p>Creating the structure of web pages.</p></article>
+        <article class="skill"><span>02</span><h3>CSS</h3><p>Styling responsive and attractive layouts.</p></article>
+        <article class="skill"><span>03</span><h3>JavaScript</h3><p>Adding interaction to websites.</p></article>
+        <article class="skill"><span>04</span><h3>Problem Solving</h3><p>Practising logic and learning through projects.</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-soft">
+      <div class="section-heading">
+        <p class="eyebrow">SOME THINGS I'VE BUILT</p>
+        <h2>My Projects</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-number">PROJECT 01</div>
+          <h3>Personal Portfolio Website</h3>
+          <p>A responsive website to introduce myself, show my skills and share project details.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-number">PROJECT 02</div>
+          <h3>Blog Platform</h3>
+          <p>A beginner web project concept for displaying posts and adding comments.</p>
+          <div class="tags"><span>Web Design</span><span>JavaScript</span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-number">PROJECT 03</div>
+          <h3>ShopEase</h3>
+          <p>A simple shopping website concept with product, cart and admin features.</p>
+          <div class="tags"><span>Frontend</span><span>UI Design</span></div>
+        </article>
+      </div>
+      <p class="note">Replace these sample project descriptions with your actual work before submitting.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Contact Me</h2>
+        <p class="section-text">Have a project idea or want to connect? Send me a message below.</p>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+        <button class="button primary" type="submit">Send Message</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> sameera. Built with HTML, CSS and JavaScript.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
